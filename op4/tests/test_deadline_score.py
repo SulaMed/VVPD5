@@ -11,4 +11,5 @@ def test_deadline_score(pass_date, deadline_date, score):
 
 def test_of_error():
     with pytest.raises(AssertionError):
-        assert deadline_score('11.11.2012', '12.11.2012')
+        assert deadline_score('11.11.2012', '12.11.2011')
+

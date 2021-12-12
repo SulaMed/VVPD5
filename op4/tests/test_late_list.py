@@ -14,6 +14,6 @@ def test_error():
         assert late_list('11-11-2011', '12-11-2011')
 
 
-def test_error_x():
+def test_error_2():
     with pytest.raises(AttributeError):
         assert late_list('11.11.2011', '12.11.2012')

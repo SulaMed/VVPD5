@@ -1,4 +1,4 @@
-import re
+
 from score import deadline_score
 from late_list import late_list
 
