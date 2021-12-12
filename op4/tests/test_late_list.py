@@ -11,7 +11,7 @@ def test_list(x, y, z):
 
 def test_error():
     with pytest.raises(AttributeError):
-        assert late_list('11-11-2011', '12-11-2011')
+        assert late_list('11-11-2011', '11-11-2011')
 
 
 def test_error_2():
