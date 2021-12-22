@@ -3,7 +3,7 @@
 
 <h3> Примеры кода <h3>
   
-  <h3> функция 1 <h3>
+<h3> функция 1 <h3>
   def deadline_score(pass_date: str, deadline_date: str):
     """
 
@@ -32,7 +32,7 @@
             print(deadline_date[0:2])
             return a - 1
   
-  <h3> функция 2<h3>
+ <h3> функция 2<h3>
     
   def late_list(grades: dict, deadline_date: str) -> list[str]:
     """
@@ -51,6 +51,14 @@
             print('введена неверная дата')
     return g
     
+<h3> Ссылки на источники <h3>
+1.The Python standard library [Электронный ресурс]: official Python documentation for 3.8.6 version. – 2020. – Режим доступа: https://docs.python.org/3.8/library/index.html.
+
+2.Модель ветвления Gitflow [Электронный ресурс]: перевод статьи в блоге компании Bitworks Software. – 2019. – Режим доступа: https://bitworks.software/2019-03-12-gitflow-workflow.html.
+
+3.A successful Git branching model [Электронный ресурс]: оригинальная статья-руководство от «автора» Gitflow. – 2010. – Режим доступа: 
+https://nvie.com/posts/a-successful-git-branching-model/.
+
     
     
     
