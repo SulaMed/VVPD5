@@ -36,6 +36,8 @@
     
   def late_list(grades: dict, deadline_date: str) -> list[str]:
     """
+   
+   
     стиль rest
     Фуннкция, возращающая список сдавших вовремя
     :param grades: словарь всех студентов
