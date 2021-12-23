@@ -1,38 +1,40 @@
 # VVPD5
-<h1> НАЧАЛО РАБОТЫ <h1>
+# НАЧАЛО РАБОТЫ
 
-<h3> Примеры кода <h3>
+### Примеры кода
   
-<h3> функция 1 <h3>
-  def deadline_score(pass_date: str, deadline_date: str):
-    """
+### функция 1
+```python
+def deadline_score(pass_date: str, deadline_date: str):
+  """
 
-    функция, ставящая оценку ученику
-    :param pass_date: список сроков сдавших
-    :param deadline_date: дедлайн
-    :return: оценка
-    """
+  функция, ставящая оценку ученику
+  :param pass_date: список сроков сдавших
+  :param deadline_date: дедлайн
+  :return: оценка
+  """
 
-    a = 5
-    x = []
-    if re.fullmatch(r'\d\d-\d\d-2\d\d\d', pass_date) and re.fullmatch(r'\d\d-\d\d-2\d\d\d', deadline_date):
-        if int(pass_date[0:2]) <= (int(deadline_date[0:2])):
-            print((int(deadline_date[0:2])))
-            return a
-        elif int(pass_date[0:2]) > int(deadline_date[0:2]) + 21 or int(pass_date[4:5]) > int(deadline_date[4:5]):
-            print(int(deadline_date[0:2]) + 7)
-            return a - 4
-        elif int(pass_date[0:2]) > int(deadline_date[0:2]) + 14 or int(pass_date[4:5]) > int(deadline_date[4:5]):
-            print(int(deadline_date[0:2]))
-            return a - 3
-        elif int(pass_date[0:2]) > int(deadline_date[0:2]) + 7 or int(pass_date[4:5]) > int(deadline_date[4:5]):
-            print(int(deadline_date[0:2]))
-            return a - 2
-        else:
-            print(deadline_date[0:2])
-            return a - 1
-  
- <h3> функция 2<h3>
+  a = 5
+  x = []
+  if re.fullmatch(r'\d\d-\d\d-2\d\d\d', pass_date) and re.fullmatch(r'\d\d-\d\d-2\d\d\d', deadline_date):
+      if int(pass_date[0:2]) <= (int(deadline_date[0:2])):
+          print((int(deadline_date[0:2])))
+          return a
+      elif int(pass_date[0:2]) > int(deadline_date[0:2]) + 21 or int(pass_date[4:5]) > int(deadline_date[4:5]):
+          print(int(deadline_date[0:2]) + 7)
+          return a - 4
+      elif int(pass_date[0:2]) > int(deadline_date[0:2]) + 14 or int(pass_date[4:5]) > int(deadline_date[4:5]):
+          print(int(deadline_date[0:2]))
+          return a - 3
+      elif int(pass_date[0:2]) > int(deadline_date[0:2]) + 7 or int(pass_date[4:5]) > int(deadline_date[4:5]):
+          print(int(deadline_date[0:2]))
+          return a - 2
+      else:
+          print(deadline_date[0:2])
+          return a - 1
+ ```
+ 
+#### функция 2
     
   def late_list(grades: dict, deadline_date: str) -> list[str]:
     """
@@ -53,7 +55,7 @@
             print('введена неверная дата')
     return g
     
-<h3> Ссылки на источники <h3>
+### Ссылки на источники
 1.The Python standard library [Электронный ресурс]: official Python documentation for 3.8.6 version. – 2020. – Режим доступа: https://docs.python.org/3.8/library/index.html.
 
 2.Модель ветвления Gitflow [Электронный ресурс]: перевод статьи в блоге компании Bitworks Software. – 2019. – Режим доступа: https://bitworks.software/2019-03-12-gitflow-workflow.html.
